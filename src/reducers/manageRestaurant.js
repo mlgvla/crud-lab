@@ -22,6 +22,9 @@ export default function manageRestaurants(state = {
             return {
                 ...state, reviews: [...state.reviews, review]
             }
+        case 'DELETE_REVIEW':
+            const reviews = state.reviews.filter(review => review.id !== action.id)
+            return {...state, reviews}
     
         default:
             return state

@@ -7,7 +7,7 @@ class Review extends Component {
     }
 
   render() {
-    console.log("In Review")
+
     return (
        
       <div>
