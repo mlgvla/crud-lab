@@ -8,7 +8,7 @@ class Reviews extends Component {
       console.log("in Reviews")
       const { reviews, restaurantId, deleteReview } = this.props
       console.log(this.props)
-        debugger
+        
       const restaurantReviews = reviews.filter(review => review.restaurantId === restaurantId)
         console.log(restaurantReviews)
       const reviewList = restaurantReviews.map((review, index) => {
